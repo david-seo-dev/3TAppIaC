@@ -1,0 +1,70 @@
+# .gitignore for Terraform Projects
+
+# Terraform Core Files
+.terraform/                  # Local Terraform directories containing providers and modules
+*.tfstate                    # Local state files (use remote state instead!)
+*.tfstate.*                  # State file backups and intermediate files
+crash.log                    # Terraform crash log files
+*.tfplan                     # Terraform plan output files (can contain sensitive data)
+*.tfvars                     # Variable files (often contain secrets or environment-specific data)
+*.auto.tfvars                # Automatically loaded variable files (often contain secrets)
+terraform.tfvars.json        # JSON format variable files
+*.auto.tfvars.json           # JSON format auto variable files
+override.tf                  # Override files
+override.tf.json             # Override files (JSON)
+*_override.tf                # Override files (suffix)
+*_override.tf.json           # Override files (JSON suffix)
+.terraformrc                 # Terraform CLI configuration files
+terraform.rc                 # Terraform CLI configuration files
+
+# Potentially Sensitive Files (if not managed securely elsewhere)
+*.pem
+*.key
+*.cer
+*.crt
+
+# Common OS and Editor Files
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+
+# Linux / Various Editors
+*~
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs (IntelliJ, GoLand, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Atom
+.atom/
+
+# Python (if using helper scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.env/
+env/
+venv/
+.venv/
+
+# Node.js (if using helper scripts)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
