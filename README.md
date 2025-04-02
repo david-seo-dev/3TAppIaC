@@ -5,11 +5,11 @@ A 3-Tier Architecture app separates the presentation, application, and database 
 
 ## 🚀 **In this Project, I have used the following AWS services:**
 
-- **VPC**  
-- **S3**  
-- **IAM**  
-- **EC2**  
-- **RDS**  
+- **VPC**
+- **S3**
+- **IAM**
+- **EC2**
+- **RDS**
 - **Route 53**
 
 The code is from a sample tutorial - I wanted to demonstrate the IaC and 3T as I talk through the example.
